@@ -1,0 +1,51 @@
+<!-- 动态背景颜色渐变 -->
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+			135deg,
+			hsl(223, 100%, 48%),
+			hsl(208, 90%, 65%),
+			hsl(34, 60%, 67%),
+			hsl(313, 99%, 48%)
+
+	);
+	background-size: 200% 200%;
+	animation: gradient-move 4s ease alternate infinite;
+}
+
+@keyframes gradient-move {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+.title{
+	text-align: center;
+	font-size: 40px;
+	font-family: "楷体";
+	font-weight: bold;
+	color: azure;
+}
+
+.a{
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+	/*设置负值，为要定为子盒子的一半宽度*/
+	text-align: center;
+	font-size: 16px;
+}
+
+.row div{
+	height: 150px;
+}

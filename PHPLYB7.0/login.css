@@ -1,0 +1,39 @@
+/*设置表单居中*/
+.a{
+	width: 374px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -187px;
+	/*设置负值，为要定为子盒子的一半宽度*/
+	margin-top: -100px;
+	/*设置负值，为要定位子盒子的一半高度*/
+}
+/*设置背景图*/
+body{
+	background-image: url("./img/2.png") ;
+	background-size: cover;
+}
+/*设置标题文字样式*/
+.title{
+	text-align: center;
+	font-size: 40px;
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -30px;
+	font-family: "楷体";
+	font-weight: bold;
+	color: azure;
+}
+td{
+	text-align: center;
+	font-weight: bold;
+	color: azure;
+	font-family: "楷体";
+	font-size: 15px;
+}
